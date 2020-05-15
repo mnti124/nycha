@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,900|Ubuntu&display=swap"
+    rel="stylesheet"
+  />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>NYCHA</title>
+  </head>
+  <body>
+
+    <section class="top container-fluid">
+        <header>
+          <h1 class="title" id="colorMove">NYCHA's Analysis</h1>
+          <h2 class="title-h2">(New York City Housing Authority)</h2>
+        </header>
+      </section>
+
+    <section class="middle">
+      <div class="row">
+        <div class="col-md-3" id="particles-js"></div>
+
+        <div class="col-md-6 col-sm-6 middle-content">
+          <h1 class="middle-title">Part 2</h1>
+          <div class="intro">
+            <h2>Measures of Spread and Center</h2>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="table-head">Measure</th>
+                  <th class="table-head">Female Household Headed Families</th>
+                  <th class="table-head">Male Household Headed Families</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mean</td>
+                  <td>22378.82</td>
+                  <td>6580.667</td>
+                </tr>
+                <tr>
+                  <td>Median</td>
+                  <td>6654</td>
+                  <td>2467</td>
+                </tr>
+                <tr>
+                  <td>Variance</td>
+                  <td>1304129049</td>
+                  <td>110608654</td>
+                </tr>
+                <tr>
+                  <td>Standard Deviation</td>
+                  <td>36112.73</td>
+                  <td>10517.06</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="intro-desc">
+              The mean and median are different in both cases. This is not
+              surprising since as seen from the previous graphs, the female’s
+              household image has a greater range in the x-axis compared to the
+              male’s one. Furthermore when looking at the graph distributions,
+              both are skewed to the right, but the tot female household graph
+              has greater mean compared to the male’s; this might be attributed
+              to the disparity in income, which would explain the great
+              difference in numbers. Additionally, the Total Male Household
+              Headed Families has a standard deviation that is fairly close to
+              the mean, again showing that the graph a smaller spread across the
+              data set
+            </p>
+          </div>
+
+          <hr />
+
+          <!-- ScatterPlot -->
+
+          <div class="scatterplots">
+            <h2>Scatterplots and Correlation</h2>
+            
+            <div class="scatterplot-img">
+                <img
+                class="img-fluid page2-img"
+                src="img/project_regression_line.png"
+                alt="Total Families"
+              />
+            </div>
+                
+             
+
+            <p class="var-description">
+              From the graph we can see that there appears to be a linear
+              association between the Total Female Headed Household Families and
+              Total Male Headed Household Families. The strong correlation of
+              0.9973634 between the two variables can be attributed by the need
+              of families to rent a house or apartment, which causes the number
+              of applicants to increase. Thus, the NYCHA will have a greater
+              number of applicants. Additionally, there is a gap in the x-axis
+              starting from 6000 to 8000, that is the same gap that was
+              previously discussed, which might be caused by the lack of data
+              for a period of time or the data might have been so small that
+              they decided to ignore those values.
+            </p>
+          </div>
+
+          <hr />
+
+          <!-- Confidence Interval -->
+          <div class="confidence-interval">
+            <h2>Confidence Interval</h2>
+
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="table-head">Measure</th>
+                  <th class="table-head">Female Household Headed Families</th>
+                  <th class="table-head">Male Household Headed Families</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mean</td>
+                  <td>22378.82</td>
+                  <td>6580.667</td>
+                </tr>
+                <tr>
+                  <td>Median</td>
+                  <td>6654</td>
+                  <td>2467</td>
+                </tr>
+                <tr>
+                  <td>Variance</td>
+                  <td>1304129049</td>
+                  <td>110608654</td>
+                </tr>
+                <tr>
+                  <td>Standard Deviation</td>
+                  <td>36112.73</td>
+                  <td>10517.06</td>
+                </tr>
+                <tr>
+                  <td>Confidence Interval</td>
+                  <td>[ 22189.65, 22567.99 ]</td>
+                  <td>[ 6477.597, 6683.737 ]</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p class="var-description">
+              In both cases the confidence interval is positive, which is not
+              surprising since the standard deviations have positive values.
+              Moreover the mean falls within the interval range, suggesting that
+              we can be 95% certain that we obtain the true mean. Another
+              observation is the difference in values of the intervals from both
+              data sets, which is caused by the distribution of the data being
+              more spread in the female’s household graph compared to the male’s
+              one.
+            </p>
+          </div>
+          <hr />
+
+          <div class="regression-line">
+            <h2>Linear Regression</h2>
+            <p>
+              <b>Equation of the Regression Line</b>:
+              <em>y= 0.2905x + 80.4947</em>. Where x is Total Female Headed
+              Families and we are trying to predict the ratio between female to
+              male household head:
+            </p>
+           
+             <div class="scatterplot-img">
+                <img
+                  class="img-fluid page2-img"
+                  src="img/project_regression_line.png"
+                  alt="Total Families"
+                />
+             </div>
+
+             
+
+            <p class="var-description">
+              The graph on the left is the same one as the previous when we
+              looked at the correlation in the scatterplot. On the right we have
+              the residual, which shows a normally distributed shape, suggesting
+              the line is a good fit. This is confirmed by the
+              <b> R-Squared</b> value of 0.99868, which indicates a strong
+              linear association between the variables. Image of Scatter Plot
+              with x-axis and residual y-axis The actual observed response value
+              (x axis) vs. residual (y axis) graph illustrate that the residuals
+              do not move/increase as the observed response value
+            </p>
+          </div>
+
+          <hr />
+
+          <div class="hypothesis">
+            <!-- Test 1 -->
+            <h2>Hypothesis</h2>
+            <h3>Test 1</h3>
+            <p class="var-description">
+              Based on the NYCHA data, suppose we want to know if the percentage
+              of females in charge of the family is higher than the male’s one.
+              Upon taking a subset of the Total Male Headed Household Families
+              and Total Female Headed Household Families, we found the mean to
+              be 1626.792 and 5366.042, and sample sizes: 14438 and 19068
+              respectively. Can we conclude that there are more females in
+              charge of families than males? Assuming that the significance
+              level is 0.05:
+            </p>
+
+            <p class="var-description">
+              <span
+                ><em
+                  >Let &mu;<sub>x</sub> be the mean of the Total Female Headed
+                  Household Families</em
+                ></span
+              >
+              <span
+                ><em
+                  >Let &mu;<sub>y</sub> be the mean of the Total Male Headed
+                  Household Families</em
+                ></span
+              >
+            </p>
+
+            <p class="var-description">
+              <span>Null and Alternative Hypothesis:</span>
+              <span>H<sub>0</sub>: &mu;<sub>x</sub> = &mu;<sub>x</sub></span>
+              <span>H<sub>1</sub>: &mu;<sub>y</sub> > &mu;<sub>y</sub></span>
+              <span>Test Statistic = 0.01598</span>
+              Since the significance level is 0.05, the resulting = 0.05, with a
+              critical value is zα = z0.05 = −1.64. With this information we
+              reject the null hypothesis and conclude that there are more
+              females in charge in the NYCHA programs that are in charge of the
+              house.
+            </p>
+
+            <!-- Test 2 -->
+
+            <h3>Test 2</h3>
+            <p class="var-description">
+              Based on the NYCHA data, suppose we want to know if the percentage
+              of females in charge of the family is not the male’s one. Upon
+              taking a subset of the Total Male Headed Household Families and
+              Total Female Headed Household Families, we found the mean to be
+              342.375 and 469.6667, and sample sizes: 187 and 656 respectively.
+              Can we conclude that there are more females in charge of families
+              than males? Assuming that the significance level is 0.05
+            </p>
+
+            <p class="var-description">
+              <span
+                ><em
+                  >Let &mu;<sub>x</sub> be the mean of the Total Female Headed
+                  Household Families</em
+                ></span
+              >
+              <span
+                ><em
+                  >Let &mu;<sub>y</sub> be the mean of the Total Male Headed
+                  Household Families</em
+                ></span
+              >
+            </p>
+
+            <p class="var-description">
+              <span>Null and Alternative Hypothesis:</span>
+              <span>H<sub>0</sub>: &mu;<sub>x</sub> = &mu;<sub>x</sub></span>
+              <span>H<sub>1</sub>: &mu;<sub>y</sub> != &mu;<sub>y</sub></span>
+              <span>Test Statistic = 0.01896</span>
+              Since the significance level is 0.05, the resulting = 0.05, with a
+              critical value is zα = z0.05 = −1.64. With this we can reject the
+              null hypothesis since the test static is not in the critical value
+              range. Thus conclude that the percentage of female to male in
+              charge of the house based NYCHA is not the same.
+            </p>
+
+            <p class="github">
+              Code Available on <a href="https://github.com/mnti125">github</a>
+            </p>
+            <a href="index.html"
+              ><button class="btn bnt-lg btn-outline-dark continue-back">
+                Back
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div class="col-md-3" id="particles2-js"></div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p class="foot">@2020 MAT 327</p>
+    </footer>
+
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

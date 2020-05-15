@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NYCHA</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,900|Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="top container-fluid">
+      <header>
+        <h1 class="title" id="colorMove">NYCHA's Analysis</h1>
+        <h2 class="title-h2">(New York City Housing Authority)</h2>
+      </header>
+    </section>
+
+    <section class="middle">
+      <div class="row">
+        <div class="col-md-3" id="particles-js"></div>
+
+        <div class="col-md-6 middle-content">
+          <h1 class="middle-title">Analysis of NYCHA’s Data</h1>
+          <div class="intro">
+            <h2>Intoduction</h2>
+            <p class="intro-desc">
+              From the New York City Housing Authority, I am analyzing each
+              resident’s demographic data set. The data contains 43 columns,
+              consisting of many variations such as Program, Total Families,
+              Total Female Headed Families, Total Male Headed Families. The
+              Resident Data Book we will be analyzing involves data from March
+              2013 to July 2019, which will help us understand the number of
+              housing programs and families enroll in those programs in order to
+              see the relationship between the number of females vs males in
+              charge of the house. At this point based on the data gathered we
+              can ask ourselves questions like what’s the ratio of female to
+              male household head? Or Why are there more female household heads
+              in charge in the programs provided by NYCHA? Since a lot of the
+              calculations and data gathering is already done for us, we will
+              focus on the analysis of the data set, based on a variety of
+              graphs: histograms and scatter plots as well as statistical tools:
+              linear regression and confidence level and more to further draw a
+              more accurate conclusions for our questions.
+            </p>
+          </div>
+
+          <hr />
+
+          <div class="single-var">
+            <h2>Single Variable Plot</h2>
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  class="page1-img img-fluid"
+                  src="img/totfamilies.png"
+                  alt="Total Families"
+                />
+              </div>
+              <div class="col-md-6">
+                <img
+                  class="page1-img img-fluid"
+                  src="img/nycahprograms.png"
+                  alt="Programs"
+                />
+              </div>
+            </div>
+
+            <p class="var-description">
+              Description of 1st two images The first Image illustrates the
+              total number of families enrolled in any of the programs provided
+              by the NYCHA. As you have noticed, the graph appears to be skewed
+              right with a huge gap in the middle of the graphs. The gap can be
+              attributed to lack of data gathering for certain periods of time
+              which may have resulted in families not applying for the programs
+              or the data was so insignificant that they discharged it. While
+              the other image shows the types of programs families can enroll.
+              The graph shows a steady number of enrollment across all the
+              programs available. However, one thing to notice is that some
+              programs are more predominant than others, meaning there is more
+              variety such programs supported by the NYCHA ,namely: Manhattan,
+              while others are less popular: Federal.
+            </p>
+
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  class="page1-img img-fluid"
+                  src="img/female_hist.png"
+                  alt="Female Household Head"
+                />
+              </div>
+              <div class="col-md-6">
+                <img
+                  class="page1-img img-fluid"
+                  src="img/male_hist.png"
+                  alt="Male Household Head"
+                />
+              </div>
+            </div>
+
+            <p class="var-description">
+              Description of Images Here we will look at the female and male
+              families' household histograms. The female household head image
+              illustrates the number of females in charge of the house based on
+              their gross income. Whereas, the other graph shows the number of
+              males in charge of the house. We can see that the female household
+              chart has a larger range than the male, as both images are skewed
+              to the right. This suggests that more women have stable and
+              perhaps higher paying jobs than men, when looking at the NYCHA
+              sample data set. Furthermore, similar to the Total Families
+              Histogram, we can visibly see the huge gap in the middle caused by
+              the small number of data gathered or lack of programs available
+              for families to apply.
+            </p>
+            <p class="github">
+              Code Available on <a href="https://github.com/mnti125">github</a>
+            </p>
+            <a href="page2.html"
+              ><button class="btn bnt-lg btn-dark continue-back">
+                Continue
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div class="col-md-3" id="particles2-js"></div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p class="foot">@2020 MAT 327</p>
+    </footer>
+
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

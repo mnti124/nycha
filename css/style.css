@@ -1,0 +1,199 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+h2, h3 {
+    color: #dbdbdb;
+    font-family: 'Pacifico', cursive;
+    padding-bottom: 7px;
+    text-align: center;
+}
+
+.title-h2 {
+    color: #1f4068;
+    font-family: 'Ubuntu';
+}
+
+p {
+    line-height: 2.4;
+}
+
+#particles-js,
+#particles2-js {
+    padding: 0;
+}
+
+hr {
+    margin: 50px auto 50px;
+    width: 5%;
+    border: dotted #40bad5;
+    border-width: 7px;
+    border-bottom: none;
+}
+
+footer {
+    width: 100%;
+    background-color: #30475e;
+    padding: 1rem 0;
+}
+
+.title {
+    color: #1f4068;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.top {
+    width: 100%;
+    padding: 3%;
+    background: url(../img/head3.png);
+    background-repeat: no-repeat;
+}
+
+.middle-content {
+    margin-top: 75px;
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+.intro,
+.single-var,
+.scatterplots,
+.confidence-interval,
+.regression-line,
+.hypothesis {
+    width: 100%;
+    margin: auto;
+}
+
+.middle-title {
+    text-align: center;
+    padding: 30px 8px;
+    color: #dbdbdb;
+    font-family: 'Pacifico', cursive;
+    width: 75%;
+    margin: auto;
+}
+
+/* Images */
+.page1-img {
+    width: 100%;
+    height: 300px;
+}
+
+div.scatterplot-img {
+    width: 100%;
+    text-align: center;
+}
+img.page2-img {
+    width: 75%;
+    height: 350px;
+    
+    
+}
+
+.github {
+    width: 50%;
+    display: inline-block;
+}
+
+.continue-back {
+    margin-left: 35%;
+}
+
+.foot {
+    text-align: center;
+    color: white;
+    font-size: .60rem;
+}
+
+/* Page 2 */
+table.table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    border-top: .175rem solid #2a7886;
+    border-bottom: .175rem solid #79bac1;
+
+}
+
+.table tbody td,
+.table thead th {
+    padding: .75rem;
+    border-top: .175rem solid #1f4068;
+
+}
+
+
+tbody tr:nth-child(odd) {
+    background-color: #d4f8e8;
+}
+
+/* Hypothesis */
+span {
+    display: block;
+    text-align: center;
+}
+
+@media (max-width: 767px){
+    #particles-js,
+    #particles2-js {
+        display: none;
+    }
+
+    /* Container  */
+    .top {
+        padding: 8% 2%;
+    }
+
+    /* Heading Tag */
+    h1.title {
+        font-size: 2.4rem;
+    }
+    h2.title-h2 {
+        font-size: 1.4rem;
+    }
+
+    h1.middle-title {
+        font-size: 2rem;
+        line-height: 1.5;
+    }
+
+    h2, h3 {
+        font-size: 1.6rem;
+    }
+
+    /* Middle Content */
+    
+    .middle {
+        margin: 0;
+        padding: .7% 3%;
+        text-align: center;
+    }
+
+    .middle-content{
+        margin: 0;
+    }
+
+    .intro-desc,
+    .var-description {
+        font-size: .9rem;
+    }
+
+    /* Button */
+    .continue-back {
+        display: block;
+        margin: auto;
+        margin-bottom: 1.5rem;
+    }
+
+    .github {
+        display: inline;
+    
+    }
+}
